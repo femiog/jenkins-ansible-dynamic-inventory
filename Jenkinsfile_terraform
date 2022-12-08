@@ -1,11 +1,11 @@
 pipeline{
 	agent {
-		label 'terraformnode'
+		label 'Terraform-Node'
 	}
 	stages{
 		stage('clonecode'){
 			steps{
-				git "https://github.com/LandmakTechnology/jenkins-ansible-dynamic-inv"
+				git "https://github.com/femiog/jenkins-ansible-dynamic-inventory"
 			}
 		}
 		stage('setup'){
