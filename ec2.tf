@@ -3,11 +3,11 @@ provider "aws" {
 }
 resource "aws_instance" "app" {
     ami           = "ami-08e637cea2f053dfa"
-    instance_type = "t3.micro"
+    instance_type = "t2.micro"
     security_groups = ["jkSG"]
     key_name      =  "femiogkey2"
     tags = {
-        Name = " tomcat01"
+        Name = " tomcat"
         Environment = "dev"
   }  
 }
